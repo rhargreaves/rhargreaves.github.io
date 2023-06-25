@@ -1,0 +1,31 @@
+
+$primary-color: #CDCDCD;
+$background-color: #000000;
+
+@font-face {
+    font-family: 'zx-spectrumregular';
+    src: url('../fonts/ZXSpectrum.woff2') format('woff2'),
+         url('../fonts/ZXSpectrum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flash {
+	padding-left: 2px;
+	margin-left: -2px;
+	padding-top: 2px;
+	margin-top: -2px;
+	animation: flash 0.64s step-end infinite;
+}
+
+@keyframes flash {
+	0%  { background: $primary-color; color: $background-color; }
+	50%  { background: $background-color; color: $primary-color; }
+}
+
+.spec-font {
+  font-family: 'zx-spectrumregular';
+  font-size: 11pt;
+  color: $primary-color;
+  background-color: $background-color;
+}
